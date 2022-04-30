@@ -1,11 +1,12 @@
-<table class="table" style="width: 40rem;">
-  <thead class="table-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Marca</th>
-      <th scope="col">Línea</th>
-      <th scope="col">Modelo</th>
-    </tr>
+<div>
+  <table class="table" style="width: 40rem;">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Marca</th>
+        <th scope="col">Línea</th>
+        <th scope="col">Modelo</th>
+      </tr>
   </thead>
   <tbody>
     <tr *ngFor="let vehiculo of vehiculos ; let i = index">
@@ -16,4 +17,8 @@
     </tr>
   </tbody>
 </table>
+  <p>Total Renault: {{vehiculosPorMarca(vehiculos, 'Renault')}}</p>
+  <p>Total Chevrolet: {{vehiculosPorMarca(vehiculos, 'Chevrolet')}}</p>
+  <p>Total Nissan: {{vehiculosPorMarca(vehiculos, 'Nissan')}}</p>
+</div>
 

@@ -12,15 +12,19 @@ export class ListarVehiculoComponent implements OnInit {
 
   vehiculos: Array<Vehiculo> = [];
 
-
   constructor(private vehiculoService: VehiculoService) { }
 
-  getVehiculos(): void {
-    this.vehiculoService.getVehiculos().subscribe(vehiculos => this.vehiculos = vehiculos);
+  obtenerVehiculos(): void {
+    this.vehiculoService.obtenerVehiculos().subscribe(vehiculos => this.vehiculos = vehiculos);
   }
 
+  vehiculosPorMarca(vehiculos: Vehiculo[], attribute: string) {
+    return vehiculos.filter(vehiculo => vehiculo.marca === attribute).length;
+    }
+
   ngOnInit() {
-    this.getVehiculos();
+    this.obtenerVehiculos();
+
   }
 
 
