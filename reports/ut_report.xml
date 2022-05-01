@@ -1,7 +1,13 @@
 <testExecutions version="1">
+  <file path="src/app/vehiculo/listar-vehiculo/listar-vehiculo.component.spec.ts">
+    <testCase name="ListarVehiculoComponent should has correct number of rows (3 rows of vehicles and header) " duration="100"/>
+    <testCase name="ListarVehiculoComponent should create" duration="19"/>
+  </file>
   <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'base-project'" duration="118"/>
-    <testCase name="AppComponent should create the app" duration="14"/>
-    <testCase name="AppComponent should render title" duration="13"/>
+    <testCase name="AppComponent should create the app" duration="24"/>
+    <testCase name="AppComponent should have as title 'base-project'" duration="15"/>
+  </file>
+  <file path="src/app/vehiculo/vehiculo.service.spec.ts">
+    <testCase name="Service: Vehiculo should ..." duration="5"/>
   </file>
 </testExecutions>
