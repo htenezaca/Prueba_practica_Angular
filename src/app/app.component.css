@@ -1,0 +1,20 @@
+.container-vehicle-list {
+  padding: 25px 7%;
+  margin-bottom: 50px;
+}
+
+.container-vehicle-list h1 {
+  font-family: 'Indie Flower', sans-serif;
+}
+
+.container-vehicle-list .portada-img {
+  margin-bottom: 25px;
+}
+
+.container-vehicle-list .portada-img img {
+  width: 100%;
+}
+
+footer {
+  margin-bottom: 20px;
+}
